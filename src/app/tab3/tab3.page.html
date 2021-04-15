@@ -1,17 +1,51 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 3
+      Sobre
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item lines="full">
+    <ion-avatar slot="start">
+      <img src="assets/desenvolvedor.jpeg">
+    </ion-avatar>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-label>
+      <div>
+        <h2>Maria Cantizano</h2>
+        <p>Aluna na Etec "Cidade do Livro"</p>
+        <p>Lençóis Paulista-SP</p>
+        <P>(14) 99684-9611</P>
+        <P>
+          <a href="mailto:maria.cantizano@etec.sp.gov.br">
+            maria.cantizano@etec.sp.gov.br
+          </a>
+        </P>
+      </div>
+    </ion-label>
+  </ion-item>
+
+  <div class="ion-text-center">
+    <img src="https://assets.pokemon.com/static2/br/img/icons/tcgo_logo.png">
+     
+    </div>
+     
+    <ion-item lines="full">
+    <ion-label> Versão </ion-label>
+    <ion-badge color="tertiary">0.1</ion-badge>
+    </ion-item>
+     
+    <ion-item lines="full">
+    <ion-label> Ano </ion-label>
+    <ion-badge color="tertiary">2021</ion-badge>
+    </ion-item>
+     
+    <ion-item lines="full">
+    <ion-label> Turma </ion-label>
+    <ion-badge color="tertiary">B</ion-badge>
+    </ion-item>
+     
+    
 </ion-content>
