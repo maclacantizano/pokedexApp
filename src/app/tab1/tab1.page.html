@@ -1,17 +1,122 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 1
+      Pokedex
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-no-padding">
+<!-- Searchbar with a placeholder -->
+<ion-searchbar placeholder="buscar pokemons"></ion-searchbar>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-list>
+  <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png">
+      </ion-thumbnail>
+      <ion-label>
+        <div>
+          <h3>Bulbasaur</h3>
+          <ion-badge color="bulbasaur">Grass</ion-badge>
+          <ion-badge color="bulbasaur_poison">Poison</ion-badge>
+        </div>
+      </ion-label>
+
+      <ion-chip color="bulbasaur">
+        <ion-label>001</ion-label>
+      </ion-chip>
+
+  </ion-item>
+ 
+</ion-list>
+   
+
+<ion-list>
+  <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png">
+      </ion-thumbnail>
+      <ion-label>
+        <div>
+          <h3>Charmander</h3>
+          <ion-badge color="charmander">Fire</ion-badge>
+          
+        </div>
+      </ion-label>
+
+      <ion-chip color="charmander">
+        <ion-label>004</ion-label>
+      </ion-chip>
+
+  </ion-item>
+ 
+</ion-list>
+
+
+<ion-list>
+  <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png">
+      </ion-thumbnail>
+      <ion-label>
+        <div>
+          <h3>Squirtle</h3>
+          <ion-badge color="squirtle">Water</ion-badge>
+          
+        </div>
+      </ion-label>
+
+      <ion-chip color="squirtle">
+        <ion-label>007</ion-label>
+      </ion-chip>
+
+  </ion-item>
+ 
+</ion-list>
+
+
+<ion-list>
+  <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png">
+      </ion-thumbnail>
+      <ion-label>
+        <div>
+          <h3>Pikachu</h3>
+          <ion-badge color="pikachu">Eletric</ion-badge>
+          
+        </div>
+      </ion-label>
+
+      <ion-chip color="pikachu">
+        <ion-label>025</ion-label>
+      </ion-chip>
+
+  </ion-item>
+ 
+</ion-list>
+
+
+<ion-list>
+  <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/493.png">
+      </ion-thumbnail>
+      <ion-label>
+        <div>
+          <h3>Arceus</h3>
+          <ion-badge color="arceus">Normal</ion-badge>
+          
+        </div>
+      </ion-label>
+
+      <ion-chip color="dark">
+        <ion-label>493</ion-label>
+      </ion-chip>
+
+  </ion-item>
+ 
+</ion-list>
+
 </ion-content>
